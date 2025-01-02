@@ -16,8 +16,8 @@ import edu.cjc.sms.app.servicei.StudentServiceI;
 public class AdminController {
 	@Autowired
 	StudentServiceI ssi;
-         int a;
-	  int b;
+        
+	  
 	@RequestMapping("/")
 	public String preLogin() {
 		return "login";
