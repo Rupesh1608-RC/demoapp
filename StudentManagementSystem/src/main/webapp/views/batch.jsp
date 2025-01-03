@@ -55,7 +55,7 @@
 						</b></label> <input type="text" name="batch">
 					</div>
 					<div class="d-flex justify-content-center pt-5">
-						<button class="btn btn-success btn-sm ">Add Batch</button>
+						<button class="btn btn-success btn-sm ">Change Batch</button>
 					</div>
 				</form>
 			</div>
