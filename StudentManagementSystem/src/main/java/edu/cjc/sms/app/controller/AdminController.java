@@ -48,6 +48,8 @@ public class AdminController {
 		 m.addAttribute("data",result);
 	 }else {
 		 
+        List<Student>students =ssi.getAllStudents();
+        m.addAttribute("data", students);
         m.addAttribute("message", "NO recored are avilable for the batch  '"+batchNumber+"'....!");
 	 }
 		
@@ -75,7 +77,7 @@ public class AdminController {
 		  
 		  
 		  ssi.removeStudent(id);
-		  List<Student>list   =ssi.getAllStudents();
+		  List<Student>list            =ssi.getAllStudents();
 		  m.addAttribute("data", list);
 		  
 		  return "adminscreen";
