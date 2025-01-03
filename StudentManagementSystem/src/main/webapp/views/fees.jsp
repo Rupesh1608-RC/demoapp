@@ -37,7 +37,7 @@
 							<th>Batch Number</th>
 							<td>${st.batchNumber}</td>
 						</tr>
-						</tr>
+					
 						<tr class="table-danger fs-6">
 							<th>Fees Paid</th>
 							<td>${st.feesPaid}</td>
