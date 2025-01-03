@@ -35,6 +35,7 @@ form {
 	background-repeat: no-repeat;
 }
 </style>
+
 <script type="text/javascript">
 	function fees() {
 		document.fn.action = "/fees"

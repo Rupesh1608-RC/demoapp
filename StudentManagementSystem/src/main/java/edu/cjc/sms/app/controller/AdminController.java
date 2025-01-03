@@ -94,8 +94,8 @@ public class AdminController {
 }
 	  
 	  @RequestMapping("shiftbatch")
-		 public String shiftbatch(@RequestParam int studentid,@RequestParam String batch,Model m) {
-			        ssi.shiftStudentBatch(studentid,batch);
+		 public String shiftbatch(@RequestParam int studentid,@RequestParam String batch,@RequestParam String mode,Model m) {
+			        ssi.shiftStudentBatch(studentid,batch,mode);
 			         List<Student> students            =ssi.getAllStudents();
 			         m.addAttribute("data", students);
 			  return "adminscreen";

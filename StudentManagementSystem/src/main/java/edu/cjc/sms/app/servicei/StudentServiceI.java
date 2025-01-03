@@ -13,6 +13,7 @@ public interface StudentServiceI {
 	public Student getSingleStudent(int id);
 	public void updateStudentFees(int studentid, float ammount);
 	public void removeStudent(int id);
-	public void shiftStudentBatch(int studentid, String batch);
+
+	public void shiftStudentBatch(int studentid, String batch, String mode);
 
 }

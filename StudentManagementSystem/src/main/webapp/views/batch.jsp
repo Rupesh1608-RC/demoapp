@@ -14,7 +14,7 @@
 <body>
 	<div class="d-flex justify-content-center align-center">
 		<div class="w-50 align-middle border border-info border-3 mt-2"
-			style="height: 500px">
+			style="height: 570px">
 			<h6 class="p-3 text-primary ">
 				<u>Batch Details :-</u>
 			</h6>
@@ -33,17 +33,21 @@
 							<td>${st.studentCourse}</td>
 						</tr>
 
-						
+
 						<tr class="table-primary fs-6">
 							<th>Fees Paid</th>
 							<td>${st.feesPaid}</td>
 						</tr>
-						
+
 						<tr class="table-danger fs-6">
 							<th>Batch Number</th>
 							<td>${st.batchNumber}</td>
 						</tr>
 
+						<tr class="table-danger fs-6">
+							<th>Batch mode</th>
+							<td>${st.batchMode}</td>
+						</tr>
 					</tbody>
 				</table>
 				<form action="shiftbatch">
@@ -54,6 +58,21 @@
 								Batch<br> Name
 						</b></label> <input type="text" name="batch">
 					</div>
+
+                     <br>
+					<div class="col">
+						<select class="select form-control-sm" name="mode">
+							<option value="#" disabled>Select Batch Mode</option>
+							<option value="Online">Online</option>
+							<option value="Offline">Offline</option>
+
+						</select> <label for="mode" class="form-label select-label"><b>Batch
+								Mode </b></label>
+					</div>
+
+
+
+
 					<div class="d-flex justify-content-center pt-5">
 						<button class="btn btn-success btn-sm ">Change Batch</button>
 					</div>
