@@ -30,7 +30,7 @@ public class StudentServiceImpl implements StudentServiceI{
 	@Override
 	public List<Student> searchStudentByBatch(String batchNumber) {
 		
-   List<Student>batchStudents		         = sr.findAllByBatchNumber(batchNumber);
+   List<Student>batchStudents = sr.findAllByBatchNumber(batchNumber);
    
 		return batchStudents;
 	}

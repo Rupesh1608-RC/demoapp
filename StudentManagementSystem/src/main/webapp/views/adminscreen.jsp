@@ -221,7 +221,7 @@ form {
 								<td>${s.batchNumber}</td>
 								<td>${s.batchMode}</td>
 								<td>${s.feesPaid}</td>
-								
+
 								<td><input type="radio" name="id" value="${s.studentId}">
 								</td>
 								<td>
