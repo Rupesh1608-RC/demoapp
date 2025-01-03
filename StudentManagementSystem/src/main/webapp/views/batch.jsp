@@ -53,32 +53,41 @@
 				<form action="shiftbatch">
 					<input type="text" name="studentid" value="${st.studentId}"
 						hidden="true">
-					<div class="bg-dark p-2 d-flex justify-content-between">
-						<label for="batch" class="text-info"><b>Enter Change
-								Batch<br> Name
-						</b></label> <input type="text" name="batch">
-					</div>
 
-                     <br>
 					<div class="col">
-						<select class="select form-control-sm" name="mode">
-							<option value="#" disabled>Select Batch Mode</option>
-							<option value="Online">Online</option>
-							<option value="Offline">Offline</option>
-
-						</select> <label for="mode" class="form-label select-label"><b>Batch
-								Mode </b></label>
+						<select class="select form-control-sm" name="batch">
+							<option value="#" disabled>Select Batch Number</option>
+							<option value="FDJ-185">FDJ-185</option>
+							<option value="REG-185">REG-185</option>
+							<option value="FDJ-161">FDJ-161</option>
+							<option value="REG-161">REG-161</option>
+							<option value="FDJ-162">FDJ-162</option>
+							<option value="REG-162">REG-162</option>
+							<option value="FDJ-163">FDJ-163</option>
+							<option value="REG-163">REG-163</option>
+						</select> <label for="batch" class="form-label select-label"><b>Change Batch Number</b></label>
 					</div>
 
+			<br>
+			<div class="col">
+				<select class="select form-control-sm" name="mode">
+					<option value="#" disabled>Select Batch Mode</option>
+					<option value="Online">Online</option>
+					<option value="Offline">Offline</option>
 
-
-
-					<div class="d-flex justify-content-center pt-5">
-						<button class="btn btn-success btn-sm ">Change Batch</button>
-					</div>
-				</form>
+				</select> <label for="mode" class="form-label select-label"><b>Batch
+						Mode </b></label>
 			</div>
+
+
+
+
+			<div class="d-flex justify-content-center pt-5">
+				<button class="btn btn-success btn-sm ">Change Batch</button>
+			</div>
+			</form>
 		</div>
+	</div>
 	</div>
 </body>
 </html>

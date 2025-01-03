@@ -155,7 +155,10 @@ form {
 												<option value="REG-185">REG-185</option>
 												<option value="FDJ-161">FDJ-161</option>
 												<option value="REG-161">REG-161</option>
-
+												<option value="FDJ-162">FDJ-162</option>
+												<option value="REG-162">REG-162</option>
+												<option value="FDJ-163">FDJ-163</option>
+												<option value="REG-163">REG-163</option>
 											</select> <label class="form-label select-label">Batch Number</label>
 										</div>
 									</div>
