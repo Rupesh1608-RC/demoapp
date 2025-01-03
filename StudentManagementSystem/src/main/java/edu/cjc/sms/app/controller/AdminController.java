@@ -75,7 +75,7 @@ public class AdminController {
 		  
 		  
 		  ssi.removeStudent(id);
-		  List<Student>list            =ssi.getAllStudents();
+		  List<Student>list   =ssi.getAllStudents();
 		  m.addAttribute("data", list);
 		  
 		  return "adminscreen";
