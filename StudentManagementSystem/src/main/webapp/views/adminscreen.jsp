@@ -74,7 +74,7 @@ form {
 							<div class="card-body mt-0">
 								<h3 class="heading">Student Enrollment Form</h3>
 
-								<form action="enroll_student">
+								<form action="enroll_student" method="post" enctype="multipart/form-data">
 									<div class="row ">
 										<div class="col-md-6 mb-2">
 											<div class="form-outline">
@@ -161,6 +161,14 @@ form {
 												<option value="REG-163">REG-163</option>
 											</select> <label class="form-label select-label">Batch Number</label>
 										</div>
+										
+										<div class="col-md-6 mb-2 pb-2">
+											<div class="form-outline">
+												<input type="file"
+													class="form-control form-control-sm"
+													name="photo" /> <label class="form-label"
+													for="phoneNumber">Image</label>
+											</div>
 									</div>
 									<div class="mt-2 pt-2 d-flex justify-content-center">
 										<input class="btn btn-primary btn-lg" type="submit"
@@ -200,6 +208,7 @@ form {
 					<thead>
 						<tr>
 							<th>ID</th>
+							<th>Image</th>
 							<th>Student Name</th>
 							<th>Student Email</th>
 							<th>Age</th>
@@ -216,6 +225,7 @@ form {
 						<c:forEach items="${data}" var="s">
 							<tr>
 								<td>${s.studentId}</td>
+								<td><img alt="" src="data:image/jpeg;base64,${s.photo }" width ="100"  height="100">  </td>           		 
 								<td>${s.studentFullName}</td>
 								<td>${s.studentEmail}</td>
 								<td>${s.studentAge}</td>

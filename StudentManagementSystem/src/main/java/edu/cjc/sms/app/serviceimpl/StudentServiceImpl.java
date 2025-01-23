@@ -69,7 +69,12 @@ public class StudentServiceImpl implements StudentServiceI{
            sr.save(st);
 		
 	}
-         
+
+	@Override
+	public void saveStudent(Student s) {
+          sr.save(s);	
+	}
+
 
 	
 }

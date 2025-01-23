@@ -15,5 +15,10 @@ public interface StudentServiceI {
 	public void removeStudent(int id);
 
 	public void shiftStudentBatch(int studentid, String batch, String mode);
+	public void saveStudent(Student s);
+	
+	
 
 }
+
+
